@@ -1,59 +1,63 @@
-/* General Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
 }
 
 header {
-    position: sticky;
-    top: 0;
     background: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1000;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
 header .logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+header ul.nav-links {
+    list-style-type: none;
     display: flex;
 }
 
-header nav ul li {
-    margin: 0 10px;
+header ul.nav-links li {
+    margin: 0 1rem;
 }
 
-header nav ul li a {
-    color: #fff;
+header ul.nav-links li a {
+    color: white;
     text-decoration: none;
+    font-weight: 600;
 }
 
-#hero {
-    background: #f4f4f4;
-    color: #333;
+section {
+    padding: 4rem 2rem;
     text-align: center;
-    padding: 50px 20px;
 }
 
-#about, #services, #contact {
-    padding: 30px 20px;
-}
-
-#about h2, #services h2, #contact h2 {
-    text-align: center;
-    margin-bottom: 20px;
+#about {
+    background: #fff;
 }
 
 #services {
@@ -62,73 +66,40 @@ header nav ul li a {
 
 .service-card {
     background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.service-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.contact-form {
-    max-width: 600px;
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
-    background: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
-.contact-form .form-group {
-    margin-bottom: 15px;
+#contact input, #contact textarea {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 10px;
-    background: #333;
-    color: #fff;
+#contact button {
+    padding: 1rem;
+    background-color: #333;
+    color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-}
-
-.contact-form button:hover {
-    background: #555;
-}
-
-#status-message {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 1rem;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
     background: #333;
     color: #fff;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .service-card {
-        margin-bottom: 10px;
-    }
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
