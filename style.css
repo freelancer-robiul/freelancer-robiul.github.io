@@ -79,6 +79,7 @@ body {
 .header-text-photo{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .header-text{
@@ -90,6 +91,7 @@ body {
 .header-text h1{
     font-size: 50px;
     line-height: 60px;
+    color: green;
 }
 
 .header-text h4{
@@ -111,11 +113,11 @@ p#text{
 }
 
 .header-photo img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 10px;
     border: 1px solid #fb00e4;
-    margin-left: 70px;
+    margin-left: 40px;
     margin-top: 30px;
     object-fit: cover;
 }
