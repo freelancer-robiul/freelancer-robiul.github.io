@@ -117,6 +117,7 @@ p#text{
     border: 1px solid #fb00e4;
     margin-left: 70px;
     margin-top: 30px;
+    object-fit: cover;
 }
 
 .social-icons{
@@ -185,8 +186,13 @@ button.about-me{
     justify-content: space-between;
 }
 
+/*================= my-story ============================*/
+
 .my-story{
-    width: 50%;
+    width: 40%;
+    border-bottom: 1px solid #e1e6e6;
+    margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 .flex-area{
@@ -195,21 +201,34 @@ button.about-me{
     align-items: center;
     background-color: blueviolet;
     padding: 30px;
-    margin-left: 20px;
     border-radius: 10px;
     color: white;
 }
 
 .my-img img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
+.story-details{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 
+.story-details p, h2{
+    margin-bottom: 20px;
+}
+
+.my-photo{
+    margin-right: 10px;
+}
 
 .my-photo img{
-    width: 330px;
+    width: 530px;
     height: 300px;
-    
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 226px;
 }
