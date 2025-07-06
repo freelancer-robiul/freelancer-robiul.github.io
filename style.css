@@ -22,7 +22,9 @@ body {
 
 /* ============= Header Section ===============*/
 
-.header-section{}
+.header-section{
+    padding-bottom: 70px;
+}
 
 .header-logo-menu{
     display: flex;
@@ -174,4 +176,40 @@ button.about-me{
 
 .about-me a:hover{
     background-color: red;
+}
+
+/*=========================== Section-2 =========================*/
+
+.section-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-story{
+    width: 50%;
+}
+
+.flex-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.my-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+
+.my-photo img{
+    width: 330px;
+    height: 300px;
+    
 }
